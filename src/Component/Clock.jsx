@@ -3,9 +3,7 @@ function Clock() {
     <div>
       <div> it's clock </div>
       <h1>{new Date().toLocaleDateString()}</h1>
-      <h2>check first commit</h2>
-      <h2>check second commit</h2>
-      <h1>{new Date().toLocaleTimeString()}</h1>
+      <h1>{new Date().toLocaleTimeString().padStart(2, "0")}</h1>
     </div>
   );
 }
